@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Node test</title>
+        <script src="nodeCreator.js"></script>
+        <script src="nodeTraversalService.js"></script>
+		<style>
+			canvas {
+				border:1px solid black;
+			}
+            body {
+                padding: 10xp;
+            }
+		</style>
+    </head>
+	<body onload="app.start()">
+        <canvas id="canvasMain" height="800" width="1000" style="float:left;"></canvas>
+        <div style="float: left;">
+            <div id="nodeOutput" style="margin-left: 10px; border:1px solid black; width: 400px; height: 650px;">
+            </div>
+            <div>
+                <ul>
+                    <li>Mouse Click : Create Node</li>
+                    <li>Mouse Click (on Node) : Select/Deselect Node</li>
+                    <li>Select two nodes to create/delete connection</li>
+                    <li>Select node and press S to set starting node</li>
+                    <li>Select node and press E to set ending node</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
+
